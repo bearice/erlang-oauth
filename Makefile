@@ -1,5 +1,14 @@
+REBAR=./rebar
+
 all:
-	@erl -make
+	@$(REBAR) get-deps
+	@$(REBAR) compile
 
 clean:
-	@rm -rf ebin/*.beam erl_crash.dump
+	@$(REBAR) clean 
+
+build_plt:
+	@$(REBAR) build-plt
+
+dialyzer:
+	@$(REBAR) dialyze

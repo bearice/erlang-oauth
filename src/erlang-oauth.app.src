@@ -1,0 +1,8 @@
+%% -*- erlang -*-
+{application, 'erlang-oauth',
+ [{description, "OAuth for Erlang"},
+  {vsn, "0.1"},
+  {modules, []},
+  {registered, []},
+  {env, []},
+  {applications, [kernel, stdlib, crypto]}]}.

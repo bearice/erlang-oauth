@@ -1,0 +1,5 @@
+
+.DS_Store
+ebin/*.beam
+ebin/*.app
+
